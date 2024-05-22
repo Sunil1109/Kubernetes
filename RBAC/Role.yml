@@ -1,0 +1,10 @@
+# Roles (namespaced)
+apiVersion: v1
+kind: Role
+metadata:
+  name: my-role
+  namespace: default
+rules:
+  - apiGroups: [""]
+    resources: ["pods", "service"]
+    verbs: ["get", "watch", "list"]

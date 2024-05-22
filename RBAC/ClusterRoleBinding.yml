@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ClusterRoleBinding
+metadata: 
+  name: my-sa-Cluster-roleBinding
+sources:
+  kind: ServiceAccount
+  name: my-sa
+roleRef:
+  kind: ClusterRole
+  name: my-clusterrole
